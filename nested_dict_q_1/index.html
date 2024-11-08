@@ -8,7 +8,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="css/font-chula.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <script>
   function copyCode(button) {
@@ -138,36 +138,62 @@ print(get_min_max_sentence_length(sentences))
     <!--/Portfolio Filters --> 
     <!-- Portfolio Wrapper -->
     <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four info isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>        
-        <div class="item_overlay">
-          <a href="img/portfolio_pic1.jpg" class="item_info fancybox"> 
-            <h4 class="project_name">SMS Mobile App</h4> 
-          </a>
-        </div>
+      <!-- Portfolio Item #1 -->
+<div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four info isotope-item">
+  <div class="portfolio_img"> 
+    <h4>จงเขียนโปรแกรมที่สร้างลิสต์ของทูเปิล (name, line id) จากดิกชันนารีซ้อนใน โดยเรียงลำดับตามอักษรของชื่อ</h4>
+    <ul>
+      <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+      <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+      <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis</li>
+    </ul>
+  </div>        
+</div>
+<!-- /Portfolio Item -->
+
+<!-- Portfolio Item #2 -->
+<div class="portfolio-item one-four steps isotope-item">
+  <div class="col-lg-12 about-us">
+    <div class="row align-items-center" style="display: flex; flex-wrap: wrap;">
+      <!-- Text Section -->
+      <div class="col-md-6" style="padding: 20px; text-align: left;">
+        <p>
+          Write a function that transforms a list of sentences (without tokenization) into a list of word counts, 
+          and then returns a tuple containing the minimum and maximum values.
+        </p>
       </div>
-      <!-- /Portfolio Item -->
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four steps isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>        
-        <div class="item_overlay">
-          <a href="img/portfolio_pic1.jpg" class="item_info fancybox"> 
-            <h4 class="project_name">SMS Mobile App</h4> 
-          </a>
-        </div>
+      <!-- Image Section -->
+      <div class="col-md-6" style="padding: 20px; text-align: center;">
+        <img src="img/portfolio_pic2.jpg" alt="Portfolio 2" style="max-width: 100%; height: auto; border-radius: 8px;">
       </div>
-      <!-- /Portfolio Item -->
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four steps isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>        
-        <div class="item_overlay">
-          <a href="img/portfolio_pic1.jpg" class="item_info fancybox"> 
-            <h4 class="project_name">SMS Mobile App</h4> 
-          </a>
-        </div>
-      </div>
-      <!-- /Portfolio Item -->
+    </div>
+  </div>
+</div>
+<!-- /Portfolio Item -->
+
+
+<!-- Portfolio Item #3 -->
+<div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four steps isotope-item">
+  <div class="portfolio_img">
+    <div style="width: 100%; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd;">
+      <pre style="font-family: monospace; font-size: 14px; white-space: pre-wrap; overflow: auto; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+# Full Page Code Example
+def create_tuples(dictionary):
+    return sorted([(key, value) for key, value in dictionary.items()], key=lambda x: x[0])
+
+example_dict = {
+    'John': 'john123',
+    'Alice': 'alice456',
+    'Bob': 'bob789'
+}
+
+print(create_tuples(example_dict))
+      </pre>
+    </div>
+  </div>
+</div>
+<!-- /Portfolio Item -->
+
     </div>
   </div>
 </section>
