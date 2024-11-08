@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800,700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header_wrapper">
+        <div class="header_box">
+            <h1>Interactive Web Page</h1>
+            <nav class="navStyle">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#question">Question</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#note">Note</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Question Section -->
+    <section id="question" class="section">
+        <h2>Question</h2>
+        <h3>Find min/max length of sentence</h3>
+        <p>Write a function that transforms a list of sentences (without tokenization) into a list of word counts, and then returns a tuple containing the minimum and maximum values.</p>
+        <div class="code-box">
+            <button class="copy-code" onclick="copyCode(this)">Copy</button>
+            <pre><code>
+def get_min_max_sentence_length(sentence_list):
+    ### ADD CODE HERE ###
+    pass
+    ###
+
+sentences = ['short sentence.', 'This is a very long long long sentence.',
+             'a normal sentence here', 'another normal sentence']
+print(get_min_max_sentence_length(sentences))
+            </code></pre>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section">
+        <h2>Solution</h2>
+        <div id="filters">
+            <ul>
+                <li><a href="#" onclick="filterPortfolio('info'); return false;">Informations</a></li>
+                <li><a href="#" onclick="filterPortfolio('steps'); return false;">Steps to Solve</a></li>
+                <li><a href="#" onclick="filterPortfolio('code'); return false;">Code</a></li>
+            </ul>
+        </div>
+        <div id="portfolio_wrapper">
+            <div class="portfolio-item info">
+                <h3>Informations</h3>
+                <p>This section provides detailed information about solving the problem.</p>
+            </div>
+            <div class="portfolio-item steps">
+                <h3>Steps to Solve</h3>
+                <p>1. Analyze the input.</p>
+                <p>2. Transform the input into word counts.</p>
+                <p>3. Calculate the min and max values.</p>
+            </div>
+            <div class="portfolio-item code">
+                <h3>Code</h3>
+                <div class="code-box">
+                    <button class="copy-code" onclick="copyCode(this)">Copy</button>
+                    <pre><code>
+def create_tuples(dictionary):
+    return sorted([(key, value) for key, value in dictionary.items()], key=lambda x: x[0])
+
+example_dict = {
+    'John': 'john123',
+    'Alice': 'alice456',
+    'Bob': 'bob789'
+}
+
+print(create_tuples(example_dict))
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Note Section -->
+    <section id="note" class="section">
+        <h2>Note</h2>
+        <p>Important details and additional notes can go here.</p>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <a href="#previous">Previous</a>
+        <a href="#top">Back to Top</a>
+        <a href="#next">Next</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

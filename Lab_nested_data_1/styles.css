@@ -1,0 +1,132 @@
+
+/* General Reset */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+#header_wrapper {
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navStyle ul {
+    display: flex;
+}
+.navStyle ul li {
+    margin: 0 15px;
+}
+.navStyle ul li a {
+    font-size: 14px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navStyle ul li a:hover {
+    color: #18787a;
+}
+
+/* Section Titles */
+.section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #18787a;
+    margin-bottom: 20px;
+}
+.section {
+    padding: 100px 20px 40px; /* Adjust for fixed navbar */
+    background: #ffffff;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    text-align: center;
+    margin: 40px 0;
+}
+.navigation-buttons a {
+    color: #18787a;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Prompt', sans-serif;
+}
+.navigation-buttons a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Section */
+#filters {
+    text-align: center;
+    margin: 20px 0;
+}
+#filters ul {
+    display: inline-flex;
+}
+#filters li {
+    margin: 0 10px;
+}
+#portfolio_wrapper {
+    padding: 20px;
+}
+.portfolio-item {
+    display: none;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.portfolio-item.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Code Box */
+.code-box {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    position: relative;
+}
+.copy-code {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #18787a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.copy-code:hover {
+    background-color: #145f60;
+}
