@@ -6,32 +6,32 @@
  * -------------------------- */
 @font-face {
     font-family: 'CHULALONGKORNReg';
-    src: url('./CHULALONGKORNReg.otf') format('opentype');
+    src: url('nested_dict_q_1/fonts/CHULALONGKORNReg.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'CHULALONGKORNBold';
-    src: url('./CHULALONGKORNBold.otf') format('opentype');
+    src: url('nested_dict_q_1/fonts/CHULALONGKORNBold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'ChulaCharasNewReg';
-    src: url('./ChulaCharasNewReg.ttf') format('truetype');
+    src: url('nested_dict_q_1/fonts/ChulaCharasNewReg.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ChulaCharasNewIta';
-    src: url('./ChulaCharasNewIta.ttf') format('truetype');
+    src: url('nested_dict_q_1/fonts/ChulaCharasNewIta.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ChulaCharasNewBoldIta';
-    src: url('./ChulaCharasNewBoldIta.ttf') format('truetype');
+    src: url('nested_dict_q_1/fonts/ChulaCharasNewBoldIta.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ChulaCharasNewBold';
-    src: url('./ChulaCharasNewBold.ttf') format('truetype');
+    src: url('nested_dict_q_1/fonts/ChulaCharasNewBold.ttf') format('truetype');
 }
 
 .fa {
