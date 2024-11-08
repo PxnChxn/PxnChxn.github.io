@@ -8,16 +8,16 @@
 # Labs
 |No| Name  | Solution |
 |-----|----------------|--------------|
-|  01  | 3-col-portfolio	                                                  |[clickhere](https://pxnchxn.github.io/nested_dict_q_1/)|	                                                  
-|  02  | above-educational-bootstrap-responsive-template	                  |[clickhere](https://learning-zone.github.io/website-templates/above-educational-bootstrap-responsive-template/)|	                  
-|  03  | add-life-health-fitness-free-bootstrap-html5-template	          |[clickhere](https://learning-zone.github.io/website-templates/add-life-health-fitness-free-bootstrap-html5-template/)|	          
-|  04  | aerosky-real-estate-html-responsive-website-template		      |[clickhere](https://learning-zone.github.io/website-templates/aerosky-real-estate-html-responsive-website-template/)|	      
-|  05  | agile-agency-free-bootstrap-web-template					      |[clickhere](https://learning-zone.github.io/website-templates/3-col-portfolio/)|    
+|  01  | Nested dictionary : รายชื่อติดต่อ	                                    |[clickhere](https://pxnchxn.github.io/nested_dict_q_1/)|	                              
+|  02  | Nested dictionary : Name to age - Age to name                      |[clickhere](https://pxnchxn.github.io/nested_dict_q_2/)|	                  
+|  03  | Nested dictionary : Combine Dictionary	                            |[clickhere](https://pxnchxn.github.io/nested_dict_q_3/)|	          
+|  04  | Nested dictionary : Get an average score		                        |[clickhere](https://pxnchxn.github.io/nested_dict_q_4/)|	      
+|  05  | Nested dictionary : Get User comment					                      |[clickhere](https://pxnchxn.github.io/nested_dict_q_5/)|    
 # Excercises
 |No| Name  | Solution |
 |-----|----------------|--------------|
-|  01  | 3-col-portfolio	                                                  |[clickhere](https://learning-zone.github.io/website-templates/3-col-portfolio/)|	                                                  
-|  02  | above-educational-bootstrap-responsive-template	                  |[clickhere](https://learning-zone.github.io/website-templates/above-educational-bootstrap-responsive-template/)|	                  
-|  03  | add-life-health-fitness-free-bootstrap-html5-template	          |[clickhere](https://learning-zone.github.io/website-templates/add-life-health-fitness-free-bootstrap-html5-template/)|	          
-|  04  | aerosky-real-estate-html-responsive-website-template		      |[clickhere](https://learning-zone.github.io/website-templates/aerosky-real-estate-html-responsive-website-template/)|	      
-|  05  | agile-agency-free-bootstrap-web-template					      |[clickhere](https://learning-zone.github.io/website-templates/3-col-portfolio/)|    
+|  01  | Nested dictionary : รายชื่อติดต่อ	                                    |[clickhere](https://pxnchxn.github.io/nested_dict_q_1/)|	                              
+|  02  | Nested dictionary : Name to age - Age to name                      |[clickhere](https://pxnchxn.github.io/nested_dict_q_2/)|	                  
+|  03  | Nested dictionary : Combine Dictionary	                            |[clickhere](https://pxnchxn.github.io/nested_dict_q_3/)|	          
+|  04  | Nested dictionary : Get an average score		                        |[clickhere](https://pxnchxn.github.io/nested_dict_q_4/)|	      
+|  05  | Nested dictionary : Get User comment					                      |[clickhere](https://pxnchxn.github.io/nested_dict_q_5/)|   
