@@ -1246,3 +1246,13 @@ width: 99%;
 .code-box button:hover {
     background: #2878b5;
 }
+
+.inline-text {
+    white-space: nowrap; /* Prevents text wrapping */
+    display: inline-block; /* Ensures the text is treated as a single block */
+    margin: 0; /* Removes unnecessary margins */
+}
+
+.inline-text span {
+    display: inline-block; /* Makes sure the span element respects its content width */
+}
