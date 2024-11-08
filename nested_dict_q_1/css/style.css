@@ -396,7 +396,16 @@ img {
 .page_section.paddind {
     padding-bottom: 60px;
 }
+/* Hide all portfolio items by default */
+.portfolio .portfolio-item {
+    display: none;
+}
 
+/* Show portfolio items when the filter is active */
+.portfolio .portfolio-item.active {
+    display: block;
+    width: 100%; /* Full width */
+}
 
 
 /* About Us
@@ -1286,6 +1295,3 @@ width: 99%;
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.navigation-buttons a:hover {
-    background-color: #145f60; /* Slightly darker shade for hover effect */
-}
