@@ -24,14 +24,13 @@
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
-      <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-	  <nav class="navbar navbar-inverse" role="navigation">
+	<nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
 	    <div id="main-nav" class="collapse navbar-collapse navStyle">
 			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="https://pxnchxn.github.io/" class="scroll-link">Home</a></li>
+			  <li><a href="https://pxnchxn.github.io/" class="scroll-link">Home</a></li>
 			  <li><a href="#Question" class="scroll-link">Question</a></li>
 			  <li><a href="#Solution" class="scroll-link">Solution</a></li>
 			  <li><a href="#note" class="scroll-link">Note</a></li>
@@ -185,11 +184,15 @@
 <!--note-->
 
 <!-- Navigation Buttons -->
-<div class="navigation-buttons" style="text-align: center; margin: 20px 0;">
-  <a href="#previous" class="btn btn-primary" style="margin-right: 10px;">Previous</a>
-  <a href="#top" class="btn btn-secondary" style="margin-right: 10px;">Back to Top</a>
-  <a href="#next" class="btn btn-primary">Next</a>
-</div>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navigation-buttons" style="display: flex; justify-content: center; margin: 20px 0;">
+      <a href="#previous" class="btn btn-primary" style="margin-right: 10px;">Previous</a>
+      <a href="#top" class="btn btn-secondary" style="margin-right: 10px;">Back to Top</a>
+      <a href="#next" class="btn btn-primary">Next</a>
+    </div>
+  </div>
+</nav>
 <!-- /.Navigation Buttons -->
 
 <!--Footer-->
