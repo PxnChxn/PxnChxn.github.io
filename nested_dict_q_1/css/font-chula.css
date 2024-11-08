@@ -5,11 +5,33 @@
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  @font-face {
-  font-family: 'Prompt';
-  src: url('../fonts/Prompt-Black.ttf') format('truetype'),
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'CHULALONGKORNReg';
+    src: url('./CHULALONGKORNReg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CHULALONGKORNBold';
+    src: url('./CHULALONGKORNBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ChulaCharasNewReg';
+    src: url('./ChulaCharasNewReg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ChulaCharasNewIta';
+    src: url('./ChulaCharasNewIta.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ChulaCharasNewBoldIta';
+    src: url('./ChulaCharasNewBoldIta.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ChulaCharasNewBold';
+    src: url('./ChulaCharasNewBold.ttf') format('truetype');
 }
 
 .fa {
