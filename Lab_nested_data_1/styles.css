@@ -94,7 +94,6 @@ a {
 }
 .portfolio-item {
     display: none;
-    width: 100%;
     margin: 20px 0;
     border: 1px solid #ccc;
     padding: 20px;
