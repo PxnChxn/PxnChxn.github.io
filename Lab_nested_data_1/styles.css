@@ -32,7 +32,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 .navStyle ul {
     display: flex;
@@ -59,14 +59,14 @@ a {
     margin-bottom: 20px;
 }
 .section {
-    padding: 100px 20px 40px; /* Adjust for fixed navbar */
+    padding: 80px 50px 0px; /* Adjust for fixed navbar */
     background: #ffffff;
 }
 
 /* Navigation Buttons */
 .navigation-buttons {
     text-align: center;
-    margin: 40px 0;
+    margin: 100px 0;
 }
 .navigation-buttons a {
     color: #18787a;
