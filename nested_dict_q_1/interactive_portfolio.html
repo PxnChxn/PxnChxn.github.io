@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800,700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+
+        /* Navigation Buttons */
+        .navigation-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-buttons a {
+            color: #18787a;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: 'Prompt', sans-serif;
+        }
+        .navigation-buttons a:hover {
+            text-decoration: underline;
+        }
+
+        /* Portfolio Section */
+        #filters {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #filters ul {
+            display: inline-flex;
+        }
+        #filters li {
+            margin: 0 10px;
+        }
+        #portfolio_wrapper {
+            padding: 20px;
+        }
+        .portfolio-item {
+            display: none;
+            width: 100%;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Code Box */
+        .code-box {
+            background: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: "Courier New", monospace;
+            overflow-x: auto;
+        }
+        .copy-code {
+            background-color: #18787a;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+        }
+        .copy-code:hover {
+            background-color: #145f60;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <a href="#previous">Previous</a>
+        <a href="#top">Back to Top</a>
+        <a href="#next">Next</a>
+    </div>
+
+    <!-- Filters -->
+    <div id="filters">
+        <ul>
+            <li><a href="#" onclick="filterPortfolio('info')">Informations</a></li>
+            <li><a href="#" onclick="filterPortfolio('steps')">Steps to Solve</a></li>
+            <li><a href="#" onclick="filterPortfolio('code')">Code</a></li>
+        </ul>
+    </div>
+
+    <!-- Portfolio Wrapper -->
+    <div id="portfolio_wrapper">
+        <div class="portfolio-item info">
+            <h3>Informations</h3>
+            <p>Details about the task go here.</p>
+        </div>
+        <div class="portfolio-item steps">
+            <h3>Steps to Solve</h3>
+            <p>Step-by-step solution goes here.</p>
+        </div>
+        <div class="portfolio-item code">
+            <h3>Code</h3>
+            <div class="code-box">
+                <button class="copy-code" onclick="copyCode(this)">Copy</button>
+                <pre><code>
+def example():
+    print("Code goes here")
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterPortfolio(filter) {
+            const items = document.querySelectorAll(".portfolio-item");
+            items.forEach(item => {
+                if (item.classList.contains(filter)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+
+        function copyCode(button) {
+            const codeBox = button.nextElementSibling.querySelector("code");
+            const codeText = codeBox.textContent.trim();
+
+            const tempTextarea = document.createElement("textarea");
+            tempTextarea.value = codeText;
+            document.body.appendChild(tempTextarea);
+
+            tempTextarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempTextarea);
+
+            button.textContent = "Copied!";
+            setTimeout(() => button.textContent = "Copy", 2000);
+        }
+    </script>
+</body>
+</html>
