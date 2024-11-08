@@ -1256,3 +1256,36 @@ width: 99%;
 .inline-text span {
     display: inline-block; /* Makes sure the span element respects its content width */
 }
+
+.copy-code {
+    background-color: #18787a; /* Primary color */
+    color: #fff; /* Text color */
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-code:hover {
+    background-color: #145f60; /* Slightly darker shade for hover effect */
+}
+
+.navigation-buttons a {
+    background-color: #18787a; /* Primary color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation-buttons a:hover {
+    background-color: #145f60; /* Slightly darker shade for hover effect */
+}
