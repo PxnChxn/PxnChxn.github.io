@@ -8,7 +8,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <script>
   function copyCode(button) {
@@ -82,9 +82,7 @@
               </div>
               <div class="col-md-6">
                 <div class="code-box" style="position: relative;">
-                  <button onclick="copyCode(this)" style="position: absolute; top: 10px; right: 10px; background: #3498db; color: #fff; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">
-                    Copy Code
-                  </button>
+                  <button class="copy-code">Copy</button>
                   <pre style="margin: 0; font-size: 14px; color: #333; line-height: 1.5;">
 <code class="language-python">
 def get_min_max_sentence_length(sentence_list):
@@ -210,10 +208,11 @@ print(get_min_max_sentence_length(sentences))
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container">
     <div class="navigation-buttons" style="display: flex; justify-content: center; margin: 20px 0;">
-      <a href="#previous" class="btn btn-primary" style="margin-right: 10px;">Previous</a>
-      <a href="#" class="btn btn-secondary" style="margin-right: 10px;">Back to Top</a>
-      <a href="#next" class="btn btn-primary">Next</a>
+	    <a href="#previous" class="btn btn-primary">Previous</a>
+	    <a href="#top" class="btn btn-secondary">Back to Top</a>
+	    <a href="#next" class="btn btn-primary">Next</a>
     </div>
+
   </div>
 </nav>
 <!-- /.Navigation Buttons -->
