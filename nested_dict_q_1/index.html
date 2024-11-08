@@ -13,25 +13,21 @@
 
   <script>
     function copyCode(button) {
-      // Select the code within the code box
-      const code = button.nextElementSibling.textContent;
-      
-      // Create a temporary textarea element
-      const tempTextarea = document.createElement("textarea");
-      tempTextarea.value = code;
-      document.body.appendChild(tempTextarea);
+    const codeBox = button.nextElementSibling;
+    const codeText = codeBox.innerText.trim();
 
-      // Copy the text inside the textarea
-      tempTextarea.select();
-      document.execCommand("copy");
+    const tempTextarea = document.createElement("textarea");
+    tempTextarea.value = codeText;
+    document.body.appendChild(tempTextarea);
 
-      // Remove the textarea
-      document.body.removeChild(tempTextarea);
+    tempTextarea.select();
+    document.execCommand("copy");
 
-      // Provide feedback to the user
-      button.textContent = "Copied!";
-      setTimeout(() => button.textContent = "Copy Code", 2000);
-    }
+    document.body.removeChild(tempTextarea);
+
+    // Provide feedback
+    button.textContent = "Copied!";
+    setTimeout(() => button.textContent = "Copy", 2000);
   </script>
 
   <!--[if lt IE 9]>
@@ -112,70 +108,40 @@ print(get_min_max_sentence_length(sentences))
   </section>
   <!-- /Question Section -->
 
-  <!-- Solution Section -->
-  <section id="Solution" class="content"> 
-    <div class="container portfolio_title"> 
-      <div class="section-title">
-        <h2>Solution</h2>
-      </div>
+  <!-- Portfolio Items -->
+  <div id="portfolio_wrapper">
+    <div class="portfolio-item info">
+      <h3>Informations</h3>
+      <p>Details about the task go here.</p>
     </div>
-    <div class="portfolio-top"></div>
-    <div class="portfolio"> 
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-          <li><a class="" href="#" data-filter=".info"><h5>Informations</h5></a></li>
-          <li><a class="" href="#" data-filter=".steps"><h5>Steps to solve</h5></a></li>
-          <li><a class="" href="#" data-filter=".code"><h5>Code</h5></a></li>
-        </ul>
-      </div>
-      <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
-        <div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four info isotope-item">
-          <div class="portfolio_img"> 
-            <h4>จงเขียนโปรแกรมที่สร้างลิสต์ของทูเปิล (name, line id) จากดิกชันนารีซ้อนใน โดยเรียงลำดับตามอักษรของชื่อ</h4>
-            <ul>
-              <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
-              <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-              <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis</li>
-            </ul>
-          </div>        
-        </div>
-        <div class="portfolio-item one-four steps isotope-item">
-          <div class="col-lg-12 about-us">
-            <div class="row align-items-center" style="display: flex; flex-wrap: wrap;">
-              <div class="col-md-6" style="padding: 20px; text-align: left;">
-                <p>
-                  Write a function that transforms a list of sentences (without tokenization) into a list of word counts, and then returns a tuple containing the minimum and maximum values.
-                </p>
-              </div>
-              <div class="col-md-6" style="padding: 20px; text-align: center;">
-                <img src="img/portfolio_pic2.jpg" alt="Portfolio 2" style="max-width: 100%; height: auto; border-radius: 8px;">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="position: absolute; left: 0px; top: 0px;" class="portfolio-item one-four code isotope-item">
-          <div class="portfolio_img">
-            <div style="width: 100%; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd;">
-              <pre style="font-family: monospace; font-size: 14px; white-space: pre-wrap; overflow: auto; padding: 10px; background: #f0f0f0; border-radius: 5px;">
-# Full Page Code Example
-def create_tuples(dictionary):
-    return sorted([(key, value) for key, value in dictionary.items()], key=lambda x: x[0])
-
-example_dict = {
-    'John': 'john123',
-    'Alice': 'alice456',
-    'Bob': 'bob789'
-}
-
-print(create_tuples(example_dict))
-              </pre>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="portfolio-item steps">
+      <h3>Steps to Solve</h3>
+      <p>Step-by-step solution goes here.</p>
     </div>
-  </section>
-  <!-- /Solution Section -->
+    <div class="portfolio-item code">
+      <h3>Code</h3>
+      <pre>
+  <code>
+  def example():
+      print("Code goes here")
+  </code>
+      </pre>
+    </div>
+  </div>
+  
+  <!-- Filter JavaScript -->
+  <script>
+    function filterPortfolio(filter) {
+      const items = document.querySelectorAll(".portfolio-item");
+      items.forEach(item => {
+        if (item.classList.contains(filter)) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    }
+  </script>
 
   <!-- Note Section -->
   <section id="note">
