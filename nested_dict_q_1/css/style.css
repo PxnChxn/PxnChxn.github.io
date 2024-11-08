@@ -1221,3 +1221,28 @@ background: #F9F9F9;
 width: 99%;
 }
 }
+
+.code-box {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Courier New", monospace;
+    overflow-x: auto; /* For horizontal scrolling */
+}
+.code-box button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.code-box button:hover {
+    background: #2878b5;
+}
